@@ -4,7 +4,8 @@
   "description": "package publish test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "ci": "npm run build"
   },
   "keywords": [],
   "author": "homie",
