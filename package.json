@@ -1,6 +1,6 @@
 {
   "name": "demo-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "package publish test",
   "main": "dist/index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "lint": "tsc",
     "test": "vitest run",
-    "local-release": "cahngeset version &&changeset publish",
+    "local-release": "changeset version &&changeset publish",
     "prepublishOnly": "npm run ci"
   },
   "exports": {
