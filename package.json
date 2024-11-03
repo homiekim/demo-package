@@ -5,11 +5,12 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsup",
-    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-    "lint": "tsc"
+    "lint": "tsc",
+    "test": "vitest run"
   },
   "exports": {
     "./package.json": "./package.json",
@@ -29,6 +30,7 @@
     "@arethetypeswrong/cli": "^0.16.4",
     "prettier": "^3.3.3",
     "tsup": "^8.3.5",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
   }
 }
